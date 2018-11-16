@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>easyAuto</title>
+       <link rel="stylesheet" href="G:/education/edWisor/JQuery/easyAutocomplete/easy-autocomplete.min.css">
+       <link rel="stylesheet" href="G:/education/edWisor/JQuery/easyAutocomplete/easy-autocomplete.themes.min.css">
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+       <script src="G:/education/edWisor/JQuery/easyAutocomplete/jquery.easy-autocomplete.min.js"></script>
+       <script>
+           var options = {
+                            url : "countries.json",
+                            getValue: "name",
+                         
+                           list: {	
+                             match: {
+                               enabled: true
+                             }
+                           },
+                         
+                           theme: "square"
+                         };
+                        
+           $("#tags").easyAutocomplete(options);
+       </script>   
+   </head>
+   <body>
+       Countries: <input type="text" id="tags"/>
+   </body>
+</html>
